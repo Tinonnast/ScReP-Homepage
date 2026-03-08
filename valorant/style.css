@@ -1,3 +1,17 @@
+/* Mobile first */
+.navbuttons { width: 150px; }
+
+/* Tablet+ */
+@media (min-width: 768px) {
+    .navbuttons { width: 200px; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #navbar { gap: 20px; }
+}
+
+
 #top-container {
     position: absolute;
     background-color: #0e111b;
