@@ -1,0 +1,220 @@
+#top-container {
+    position: absolute;
+    background-color: #0e111b;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.navbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21242d;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    position: relative;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100,
+            "YTLC" 500;
+}
+
+#button-home {
+    gap: 4px;
+}
+
+#button-valorant {
+    background-color: #383b47;
+}
+
+.navbuttons:hover {
+    background-color: #383b47;
+    transition-duration: .3s;
+}
+
+#svg-button {
+    height: 25px;
+    width: 25px;
+}
+
+#svg-button-valorant {
+    height: 60px;
+    width: 60px;
+}
+
+#svg-button-league {
+    position: relative;
+    top: -2.5px;
+    height: 35px;
+    width: 35px;
+}
+
+#middle-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 99%;
+    left: 10px;
+    background-color: #151a28;
+    top: 75px;
+    height: 87.5%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    outline: solid 0.1px #272c39;
+}
+
+.text {
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100,
+            "YTLC" 500;
+    white-space: normal;
+    display: block;
+    text-align: center;
+}
+
+#title {
+    top: -20%;
+    font-weight: 800;
+    position: relative;
+    font-size: 80px;
+    letter-spacing: 1px;
+}
+
+#title2 {
+    top: -30%;
+    position: relative;
+    font-size: 25px;
+}
+
+#Download-button {
+    top: -3%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    height: 50px;
+    width: 350px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    padding-bottom: 1.6em;
+    cursor: pointer;
+}
+
+.Buttons > div,
+.Buttons > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Buttons:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.Buttons:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.Buttons .clone > *,
+.Buttons .text > * {
+    opacity: 1;
+    font-size: 1.75rem;
+    transition: 0.2s;
+    margin-left: 4px;
+}
+
+.Buttons .clone > * {
+    transform: translateY(60px);
+}
+
+.Buttons:hover .clone > * {
+    opacity: 1;
+    transform: translateY(-5px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.Buttons:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+/* icon style and hover */
+.Buttons svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+}
+
+.Buttons:hover svg {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+#footer {
+    position: absolute;
+    top: 95%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    left: 1%;
+}
+
+#riot-text {
+    position: relative;
+}
+
+#info-text {
+    position: relative;
+}
+
+#example {
+    position: relative;
+    border-radius: 18px;
+    top: -20%;
+}
