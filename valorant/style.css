@@ -79,12 +79,12 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: 87.5%;
+    width: 99%;
     left: 10px;
     background-color: #151a28;
     top: 75px;
     height: 91%;
-    margin: 0;
+    margin: 87.5%;
     padding: 0;
     border-radius: 20px;
     outline: solid 0.1px #272c39;
