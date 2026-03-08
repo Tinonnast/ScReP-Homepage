@@ -47,10 +47,12 @@
 
 #button-home {
     gap: 4px;
-    background-color: #383b47;
+
 }
 
-
+#button-valorant {
+    background-color: #383b47;
+}
 
 .navbuttons:hover {
     background-color: #383b47;
