@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function Enable() {
     if (bridge) {
-        bridge.button_clicked();
+        bridge.Enable();
     } else {
         window.location.href = "https://example.com"
     }
+
 }
