@@ -1,22 +1,31 @@
-var bridge;
+document.getElementById("check").checked = true;
 
-// Initialize the connection to the Python app
-document.addEventListener("DOMContentLoaded", function () {
-    if (typeof qt !== 'undefined') {
-        new QWebChannel(qt.webChannelTransport, function (channel) {
-            bridge = channel.objects.pybridge;
-            console.log("Connected to Python bridge");
-        });
+const urlParams = new URLSearchParams(window.location.search);
+const games = urlParams.get('games');
+if (games === "VAL-LOL") {
+    document.getElementById("installed-valorant").style.visibility = "visible";
+    document.getElementById("installed-league").style.visibility = "visible";
+} else if (games === "VAL") {
+    document.getElementById("installed-valorant").style.visibility = "visible";
+} else if (games === "LOL") {
+    document.getElementById("installed-league").style.visibility = "visible";
+}
+
+const enableState = urlParams.get("enable_state");
+if (enableState === "OFF") {
+    document.getElementById("enable").innerHTML = "Service Disabled"
+    document.getElementById("check").checked = false;
+} else {
+    document.getElementById("enable").innerHTML = "Service Enabled"
+    document.getElementById("check").checked = true;
+}
+
+document.getElementById("check").addEventListener("change", function() {
+    if (document.getElementById("check").checked) {
+        document.getElementById("enable").innerHTML = "Service Enabled"
+        window.location.href = "http://localhost:8364/settings/main/enabled/ON"
     } else {
-        console.warn("Qt bridge not found. Are you running this in the Python app?");
+        document.getElementById("enable").innerHTML = "Service Disabled"
+        window.location.href = "http://localhost:8364/settings/main/enabled/OFF"
     }
 });
-
-function Enable() {
-    if (bridge) {
-        bridge.Enable();
-    } else {
-        window.location.href = "https://example.com"
-    }
-
-}
