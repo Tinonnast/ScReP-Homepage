@@ -1,0 +1,250 @@
+#left-container {
+    position: fixed;
+    background-color: #0e111b;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#navbar {
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 10px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.navbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21242d;
+    height: 60px;
+    width: 255px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    position: relative;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100,
+            "YTLC" 500;
+}
+
+#button-home {
+    gap: 4px;
+    background-color: #383b47;
+}
+
+.navbuttons:hover {
+    background-color: #383b47;
+    transition-duration: .3s;
+}
+
+#svg-button {
+    position: relative;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    gap: 8px;
+}
+
+#svg-button-valorant {
+    height: 60px;
+    width: 60px;
+}
+
+#svg-button-league {
+    position: relative;
+    top: -3px;
+    height: 35px;
+    width: 35px;
+}
+
+#svg-button-settings {
+    position: relative;
+    left: 5px;
+    height: 28px;
+}
+
+#svg-button-version {
+    position: relative;
+    left: 5px;
+    height: 28px;
+}
+
+#middle-container {
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 85%;
+    left: 14.5%;
+    background-color: #151a28;
+    height: 98%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    outline: solid 0.1px #272c39;
+}
+
+.text {
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100,
+            "YTLC" 500;
+    white-space: normal;
+    display: block;
+    text-align: center;
+}
+
+#title {
+    top: -15%;
+    font-weight: 800;
+    position: relative;
+    font-size: 100px;
+}
+
+#title2 {
+    top: -30%;
+    position: relative;
+    font-size: 45px;
+}
+
+#installed-games {
+    font-size: 40px;
+    top: -30%;
+    position: relative;
+}
+
+#games-list {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -32.5%;
+    left: -20px;
+}
+
+#installed-valorant {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+#separator {
+    position: relative;
+    width: 2px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#installed-league {
+    display: flex;
+    left: 0;
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+
+#Download-button {
+    top: -3%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    height: 50px;
+    width: 350px;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    padding-bottom: 1.6em;
+    cursor: pointer;
+}
+
+.Buttons > div,
+.Buttons > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Buttons:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.Buttons:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.Buttons .clone > *,
+.Buttons .text > * {
+    opacity: 1;
+    font-size: 1.75rem;
+    transition: 0.2s;
+    margin-left: 4px;
+}
+
+.Buttons .clone > * {
+    transform: translateY(60px);
+}
+
+.Buttons:hover .clone > * {
+    opacity: 1;
+    transform: translateY(-5px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.Buttons:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+/* icon style and hover */
+.Buttons svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+}
+
+.Buttons:hover svg {
+    transform: translateY(-50%) rotate(0deg);
+}
