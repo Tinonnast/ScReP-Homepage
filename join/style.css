@@ -1,0 +1,185 @@
+body {
+    overflow-x: hidden;
+    background: #030303;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+#button1 {
+    top: 410px;
+  width: 170px;
+  height: 55px;
+  overflow: hidden;
+  border: none;
+  color: #fff;
+  background: none;
+  position: relative;
+  padding-bottom: 1.6em;
+  cursor: pointer;
+}
+
+#button2 {
+    top: 430px;
+  width: 300px;
+  height: 55px;
+  overflow: hidden;
+  border: none;
+  color: #fff;
+  background: none;
+  position: relative;
+  padding-bottom: 1.6em;
+  cursor: pointer;
+}
+
+#button3 {
+    top: 660px;
+    width: 300px;
+    height: 55px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    background: none;
+    position: relative;
+    padding-bottom: 1.6em;
+    cursor: pointer;
+}
+
+.Buttons > div,
+.Buttons > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Buttons:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.Buttons:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.Buttons .clone > *,
+.Buttons .text > * {
+  opacity: 1;
+  font-size: 1.75rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.Buttons .clone > * {
+  transform: translateY(60px);
+}
+
+.Buttons:hover .clone > * {
+  opacity: 1;
+  transform: translateY(-5px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.Buttons:hover .text > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+        
+/* icon style and hover */
+.Buttons svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-50deg);
+  transition: 0.2s ease-out;
+}
+
+.Buttons:hover svg {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+        
+.container {
+    top: -55px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+}
+
+#title {
+    position: absolute;
+    font-size: 5rem;
+    top: 242px;
+  
+}
+        
+.text {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    z-index: 2;
+    margin: 0;
+  text-align: center;
+}
+
+#description {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 326px;
+}
+        
+#blur-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(3, 1, 131, 0.986) 0%, rgba(255,255,255,0) 70%);
+    transform: translate(50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+.separator {
+
+    position: absolute;
+    width: 500px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #656565;
+}
+
+#sep1 {
+    top: 580px;
+}
+
+#code-description {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 605px;
+}
+
+#code {
+    position: absolute;
+    font-size: 3.25rem;
+    top: 665px;
+}
+
+#sep2 {
+    top: 740px;
+}
