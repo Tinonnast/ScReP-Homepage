@@ -187,4 +187,6 @@ body {
 #make-the-scroll-to-the-end-not-seem-weird {
     position: absolute;
     top: 820px;
+    height: 20px;
+    width: 20px;
 }
