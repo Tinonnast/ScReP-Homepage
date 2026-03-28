@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="style.css">
+    <title>CONTINUE TO PARTY</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <div id="blur-circle"></div>
+        <h1 class="text" id="title">Continue to join the party</h1>
+        <p class = "text" id="description">The ScoreRPC for VALORANT App needs to be installed and running to join the party.</p>
+        <!-- From Uiverse.io by satyamchaudharydev --> 
+        <button id="button1" onclick="join()" class="Buttons">
+          <div class="text">
+            <span>Join Party</span>
+          </div>
+          <div class="clone">
+            <span>Join</span>
+          </div>
+          <svg
+            stroke-width="2"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20px"
+          >
+            <path
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </button>
+        <button id="button2" class="Buttons">
+          <div class="text">
+            <span>Download ScoreRPC</span>
+          </div>
+          <div class="clone">
+            <span>Download</span>
+          </div>
+          <svg
+            stroke-width="2"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20px"
+          >
+            <path
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </button>
+        <div class="separator" id="sep1"></div>
+        <p class = "text" id="code-description">Or join directly using the party code</p>
+        <h1 class = "text" id = "code">UNKNOWN</h1>
+        <div class="separator" id="sep2"></div>
+        <!--p class = "text" id = "open-text">Open Riot Client<-->
+
+        <button id="button3" class="Buttons" onclick="window.location='riotclient://'">
+            <div class="text">
+                <span>Open Riot Client</span>
+            </div>
+            <div class="clone">
+                <span>Open</span>
+            </div>
+            <svg
+                    stroke-width="2"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+            >
+                <path
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                ></path>
+            </svg>
+        </button>
+    </div>
+  <script src=script.js></script>
+</body>
