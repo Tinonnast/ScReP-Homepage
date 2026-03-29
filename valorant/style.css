@@ -87,7 +87,7 @@
     left: 10px;
     background-color: #151a28;
     top: 75px;
-    height: 87.5%;
+    height: 91%;
     margin: 0;
     padding: 0;
     border-radius: 20px;
@@ -109,7 +109,7 @@
 }
 
 #title {
-    top: -20%;
+    top: -15%;
     font-weight: 800;
     position: relative;
     font-size: 80px;
@@ -117,7 +117,7 @@
 }
 
 #title2 {
-    top: -30%;
+    top: -25%;
     position: relative;
     font-size: 25px;
 }
@@ -199,25 +199,43 @@
 }
 
 #footer {
-    position: absolute;
-    top: 95%;
+    position: relative;
+    top: 830px;
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 8px;
     left: 1%;
+    background-color: #212332;
+    width: 730px;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    outline: solid 0.1px #272c39;
 }
 
 #riot-text {
     position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
 }
 
 #info-text {
     position: relative;
 }
 
-#example {
+.example {
     position: relative;
     border-radius: 18px;
     top: -20%;
+}
+
+#example-container {
+    position: relative;
+    top: -12%;
+    display: flex;
+    gap: 50px;
 }

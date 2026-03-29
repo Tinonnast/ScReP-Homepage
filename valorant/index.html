@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>ScReP for VALORANT</title>
-  <link rel="stylesheet" href="valorant/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="top-container">
@@ -45,10 +45,11 @@
   <div id="middle-container">
     <h1 class="text" id="title">ScReP for VALORANT</h1>
     <h2 class="text" id="title2">Share your Score, Map, Mode and more directly to Discord</h2>
-
-    <img src="valorant/valorant-example.png" id="example">
-
-    <button id="Download-button" onclick="window.location.href='https://onedrive.live.com/personal/25feebb90adb7e1c/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2F25feebb90adb7e1c%2FDocuments%2FScReP%2Eexe'" class="Buttons">
+    <div id="example-container">
+      <img src="valorant-example-in-game.png" class="example">
+      <img src="valorant-example-lobby.png" class="example">
+    </div>
+    <button id="Download-button" onclick="join()" class="Buttons">
     <div class="text">
       <span>Download ScReP</span>
     </div>
@@ -74,7 +75,8 @@
 
   </div>
   <div id="footer">
-    <p class="text" id="riot-text">ScReP isn't endorsed by Riot Games...</p><a href="/valorant/disclaimer" class="text" id="info-text">more info</a>
+    <p class="text" id="riot-text">ScReP isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</p>
   </div>
+
 </body>
 </html>
